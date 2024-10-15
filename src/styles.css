@@ -1,1 +1,1004 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9 {
+    overflow: hidden;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.commomBtn1{
+    background: #A82C48;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    transition: .40s;
+    border: none;
+}
+.commomBtn1:hover{
+    background: white;
+    color: #A82C48;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #A82C48;
+}
+.commomBtn2{
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 15px rgb(211, 207, 207);
+    width: 600px;
+    transition: .40s;
+    border: none;
+}
+.commomBtn2:hover{
+    background: white;
+    color: #A82C48;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #A82C48;
+}
+
+/* ==============================Heaher Component=================================== */
+#header{
+    background: white;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#header  #nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ul{
+    display: flex;
+    justify-content: end;
+}
+#ul .nav-link{
+    padding: 10px 23px;
+    color: #A82C48;
+    font-weight: bold;
+}
+#phone{
+    background: #A82C48;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: .40s;
+}
+#phone:hover{
+    background: white;
+    color: #A82C48;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #A82C48;
+}
+#header .logo img{
+ width: 100px;
+}
+
+#header .fa-bars{
+  font-size: 20px;
+  color: #A82C48;
+  background: white;
+  padding: 5px 7px;
+  box-shadow: 0px 0px 1px;
+  width: 33px;
+  float: right;
+  margin-top: -30px;
+}
+#header .fa-xmark{
+    font-size: 20px;
+    color: #A82C48;
+    background: white;
+    padding: 5px 7px;
+    box-shadow: 0px 0px 1px;
+    display: block;
+    width: 33px;
+    text-align: center;
+    float: right;
+    margin-top: -30px;
+}
+
+/* ==============================Home Component=================================== */
+#section1{
+    background-image: url("./assets/img/banner1.jpg");
+    background-size: cover;
+    height: 60vh;
+    background-repeat: no-repeat;
+}
+#section1 h1{
+    padding-top: 55px;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#section1 p {
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+#section2{
+    background: #A82C48;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#section2 h1{
+    color: white;
+    font-weight: bold;
+}
+
+#section2 h5{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#section2 .counterContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 300px));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#section2 .counterContainer div{
+    margin: 20px;
+}
+
+#section3 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 480px);
+    justify-content: start;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#section3 .container .leftDiv img{
+  width: 100%;
+  border-radius: 20px;
+  height: 410px;
+}
+
+#section3 .container .leftDiv p{
+    text-align: justify;
+}
+
+#section3 .container .rightDiv{
+    width: 100%;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+#section4 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 480px);
+    justify-content: start;
+    align-items: center;
+    padding-top: 70px;
+    width: 100%;
+}
+#section4 .container .leftDiv{
+    width: 400px;
+}
+#section4 .container .rightDiv{
+    width: 700px;
+}
+#section4 .container .rightDiv img{
+    width: 100%;
+    border-radius: 20px;
+    height: 680px;
+}
+#section4 .container p{
+      text-align: justify;
+}
+#section4 .fa-check{
+    color: #A82C48;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+#section5{
+    padding: 20px;
+    margin-top: 60px;
+    background-image: url("./assets/img/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#section5 h1{
+    color: #A82C48;
+    font-family:Helvetica;
+    font-weight: bold;
+}
+#section5 p{
+    color: black;
+    font-family:Helvetica;
+}
+#section5 .fa-play{
+    padding: 6px;
+    color: gray;
+}
+#section5 .fa-play:hover{
+    padding: 7px;
+    color: #A82C48;
+}
+#section6{
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#section6 h1{
+    font-weight: bold;
+    color: black;
+}
+
+#section6 .foodcardContainer{
+    display: grid;
+
+}
+#section6 .foodCard img{
+  color: black;
+  margin-top: 10px;
+}
+
+#section6 .foodCard h5{
+  color: black;
+  margin-top: 10px;
+}
+
+#section6 .foodCard h4{
+  color: #A82C48;
+}
+#section6 .foodCard p, del{
+  color: gray;
+}
+#section6 .foodcardContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 340px);
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#section6 .foodcardContainer .foodCard{
+    margin-top: 40px;
+    border: none;
+}
+
+#section6 .foodcardContainer .foodCard img:hover{
+    border: 1px solid #A82C48;
+    opacity: 0.70;
+}
+
+#section6 .foodcardContainer .foodCard img{
+    width: 100%;
+    border-radius: 10px;
+}
+#section6 .foodcardContainer .foodCard p{
+    text-align: center;
+}
+#section6 p{
+    text-align: justify;
+}
+
+#section7{
+    background: #A82C48;
+    padding: 50px;
+    margin-top: 100px;
+    display: grid;
+ 
+  }
+
+#section7 .container{
+    background: white;
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  #section7 img{
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+  }
+  #section7 h5{
+    color: #A82C48;
+  }
+  #section7 p{
+    text-align: justify;
+  }
+
+  #section8{
+    background: white;
+    padding: 50px;
+    margin-top: 100px;
+ 
+  }
+
+#section8 .container{
+    background: white;
+    
+  }
+  #section8 .faqGridContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 450px);
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+  }
+  #section8 h1{
+   text-align: center;
+  }
+  #section8 p{
+    text-align: justify;
+    margin-right: 50px;
+  }
+
+
+
+  #section9{
+    background-image: url("./assets/img/img4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    background-attachment: fixed;
+}
+
+#section9 .overlay{
+  height: 30vh;
+  background-color: rgba(0.45, 0.45, 0.45, 0.45);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#section9 .overlay .container{
+   
+}
+#section9 .overlay a{
+ float: right;
+ font-size: 18px;
+ margin: 10px;
+ margin-left: 26px;
+}
+
+#section10{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#section10 input{
+    width: 300px;
+    padding: 9px;
+    border: 2px solid gray;
+    margin-right: 2px;
+    color: black;
+}
+
+footer .footer{
+  background-color: #A82C48;
+  height: 30vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer a {
+    text-decoration: none;
+    color:  white;
+}
+footer .footer i {
+    text-decoration: none;
+    color:  white;
+    font-size: 28px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 8px;
+    margin: 3px;
+    text-align: center;
+}
+footer .footer i:hover{
+    background: #000;
+}
+
+
+
+
+#aboutSection1{
+    background-image: url("./assets/img/img3.jpg");
+    background-size: cover;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    padding-top: 60px;
+}
+
+#exploreSection1{
+    background-image: url("./assets/img/img4.jpg");
+    background-size: cover;
+    height: 60vh;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    padding-top: 70px;
+}
+
+#faqSection1{
+    background-image: url("./assets/img/image1.png");
+    background-size: cover;
+    height: 60vh;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    padding-top: 70px;
+}
+/* ===========================responsive css================================= */
+/* Extra small mobile Device for(max-width:600) */
+@media(max-width:600px) {
+    #header  #nav{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #ul{
+        display: none;
+        justify-content: end;
+        background: rgba(0.45, 0.45, 0.45, 0.45);
+        margin-top: 40px;
+        padding: 10px;
+    }
+    #ul .nav-link{
+        padding: 10px 23px;
+        color: #A82C48;
+        font-weight: bold;
+    }
+    #ul .nav-link:hover{
+        padding: 10px 23px;
+        color: white;
+        background: #A82C48;
+        font-weight: bold;
+    }
+    #header .fa-bars{
+        font-size: 20px;
+        color: #A82C48;
+        background: white;
+        padding: 5px 7px;
+        box-shadow: 0px 0px 1px;
+        display: block;
+        width: 33px;
+        text-align: center;
+    }
+    #header .fa-xmark{
+        font-size: 20px;
+        color: #A82C48;
+        background: white;
+        padding: 5px 7px;
+        box-shadow: 0px 0px 1px;
+        display: block;
+        width: 33px;
+        text-align: center;
+    }
+    /* ==============================Home Component=================================== */
+#section1{
+    background-image: url("./assets/img/banner1.jpg");
+    background-size: cover;
+    height: 70vh;
+    background-repeat: no-repeat;
+}
+#section1 h1{
+    padding-top: 30px;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#section1 p {
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+#section3 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 480px);
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#section3 .container .leftDiv img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#section3 .container .rightDiv{
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 60px;
+}
+#section3 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 480px);
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#section3 .container .leftDiv img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#section3 .container .rightDiv{
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 0px;
+}
+#section4 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 480px);
+    justify-content: start;
+    align-items: center;
+    padding-top: 70px;
+    width: 100%;
+}
+#section4 .container .leftDiv{
+    width: 400px;
+}
+#section4 .container .rightDiv{
+    width: 700px;
+}
+#section4 .container .rightDiv img{
+    width: 460px;
+    border-radius: 20px;
+    height: 480px;
+  }
+#section4 .container p{
+      text-align: justify;
+  }
+#section4 .fa-check{
+    color: #A82C48;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+}
+
+/* Only for mobile Device */
+@media (min-width:600px) {
+    #header  #nav{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #ul{
+        display: none;
+        justify-content: end;
+        background: rgba(0.45, 0.45, 0.45, 0.45);
+        margin-top: 40px;
+        padding: 10px;
+    }
+    #ul .nav-link{
+        padding: 10px 23px;
+        color: #A82C48;
+        font-weight: bold;
+    }
+    #ul .nav-link:hover{
+        padding: 10px 23px;
+        color: white;
+        background: #A82C48;
+        font-weight: bold;
+    }
+    #header .fa-bars{
+        font-size: 20px;
+        color: #A82C48;
+        background: white;
+        padding: 5px 7px;
+        box-shadow: 0px 0px 1px;
+        display: block;
+        width: 33px;
+        text-align: center;
+    }
+    #header .fa-xmark{
+        font-size: 20px;
+        color: #A82C48;
+        background: white;
+        padding: 5px 7px;
+        box-shadow: 0px 0px 1px;
+        display: block;
+        width: 33px;
+        text-align: center;
+    }
+    /* ==============================Home Component=================================== */
+#section1{
+    background-image: url("./assets/img/banner1.jpg");
+    background-size: cover;
+    height: 70vh;
+    background-repeat: no-repeat;
+}
+#section1 h1{
+    padding-top: 20px;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#section1 p {
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+#section3 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 480px);
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#section3 .container .leftDiv img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#section3 .container .rightDiv{
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 60px;
+}
+#section3 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 480px);
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#section3 .container .leftDiv img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#section3 .container .rightDiv{
+    width: 100%;
+    padding: 20px;
+    margin-top: 60px;
+}
+}
+
+/* Only for Tab Device */
+@media (min-width:768px) {
+    #header  #nav{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #ul{
+        display: none;
+        justify-content: end;
+        background: rgba(0.45, 0.45, 0.45, 0.45);
+        margin-top: 40px;
+        padding: 10px;
+    }
+    #ul .nav-link{
+        padding: 10px 23px;
+        color: #A82C48;
+        font-weight: bold;
+    }
+    #ul .nav-link:hover{
+        padding: 10px 23px;
+        color: white;
+        background: #A82C48;
+        font-weight: bold;
+    }
+    #header .fa-bars{
+        font-size: 20px;
+        color: #A82C48;
+        background: white;
+        padding: 5px 7px;
+        box-shadow: 0px 0px 1px;
+        display: block;
+        width: 33px;
+    }
+   #header .fa-xmark{
+        font-size: 20px;
+        color: #A82C48;
+        background: white;
+        padding: 5px 7px;
+        box-shadow: 0px 0px 1px;
+        display: block;
+        width: 33px;
+        text-align: center;
+    }
+    /* ==============================Home Component=================================== */
+#section1{
+    background-image: url("./assets/img/banner1.jpg");
+    background-size: cover;
+    height: 80vh;
+    background-repeat: no-repeat;
+}
+#section1 h1{
+    padding-top: 80px;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#section1 p {
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+#section3 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 740px);
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#section3 .container .leftDiv img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#section3 .container .rightDiv{
+    width: 100%;
+    padding: 20px;
+    margin-top: 0px;
+}
+#section4 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 700px);
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    width: 100%;
+}
+#section4 .container .leftDiv{
+    width: 700px;
+}
+#section4 .container .rightDiv{
+    width: 700px;
+}
+#section4 .container .rightDiv img{
+    width: 700px;
+    border-radius: 20px;
+    height: 700px;
+  }
+#section4 .container p{
+      text-align: justify;
+  }
+#section4 .fa-check{
+    color: #A82C48;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+}
+
+/* Only for Laptop  Device */
+@media (min-width:992px) {
+    #header  #nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #ul{
+        display: flex;
+        justify-content: end;
+        padding: 0px;
+        background: white;
+
+    }
+    #header .fa-bars{
+        font-size: 20px;
+        color: #A82C48;
+        background: white;
+        padding: 5px 7px;
+        box-shadow: 0px 0px 1px;
+        display: none;
+    }
+    #header .fa-xmark{
+        font-size: 20px;
+        color: #A82C48;
+        background: white;
+        padding: 5px 7px;
+        box-shadow: 0px 0px 1px;
+        display: none;
+    }
+    /* ==============================Home Component=================================== */
+#section1{
+    background-image: url("./assets/img/banner1.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+#section1 h1{
+    padding-top: 120px;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#section1 p {
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+#section3 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 550px);
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#section3 .container .leftDiv img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#section3 .container .rightDiv{
+    width: 100%;
+    padding: 20px;
+    margin-top: 00px;
+}
+#section4 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 480px);
+    justify-content: start;
+    align-items: center;
+    padding-top: 70px;
+    width: 100%;
+}
+#section4 .container .leftDiv{
+    width: 400px;
+}
+#section4 .container .rightDiv{
+    width: 700px;
+}
+#section4 .container .rightDiv img{
+    width: 100%;
+    border-radius: 20px;
+    height: 680px;
+  }
+#section4 .container p{
+      text-align: justify;
+  }
+#section4 .fa-check{
+    color: #A82C48;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+}
+
+/* Only for Desktopo  Device */
+@media (min-width:1200px) {
+    #header  #nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    #ul{
+        display: flex;
+        justify-content: end;
+        margin-top: 0px;
+        padding: 0px;
+        background: white;
+    }
+    #ul .nav-link{
+        padding: 10px 23px;
+        color: #A82C48;
+        font-weight: bold;
+    }
+    #ul .nav-link:hover{
+        padding: 10px 23px;
+        color: white;
+        background: #A82C48;
+        font-weight: bold;
+    }
+#header .fa-bars{
+    font-size: 20px;
+    color: #A82C48;
+    background: white;
+    padding: 5px 7px;
+    box-shadow: 0px 0px 1px;
+    display: none;
+    }
+#header .fa-xmark{
+        font-size: 20px;
+        color: #A82C48;
+        background: white;
+        padding: 5px 7px;
+        box-shadow: 0px 0px 1px;
+        display: none;
+    }
+/* ==============================Home Component=================================== */
+#section1{
+    background-image: url("./assets/img/banner1.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+#section1 h1{
+    padding-top: 140px;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#section1 p {
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+#section3 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 600);
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+
+#section3 .container .leftDiv img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#section3 .container .rightDiv{
+    width: 100%;
+    padding: 50px;
+    margin-top: 0px;
+}
+#section4 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 480px);
+    justify-content: start;
+    align-items: center;
+    padding-top: 70px;
+    width: 100%;
+}
+#section4 .container .leftDiv{
+    width: 400px;
+}
+#section4 .container .rightDiv{
+    width: 700px;
+}
+#section4 .container .rightDiv img{
+    width: 100%;
+    border-radius: 20px;
+    height: 680px;
+  }
+#section4 .container p{
+      text-align: justify;
+  }
+#section4 .fa-check{
+    color: #A82C48;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+}
